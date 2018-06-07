@@ -1,0 +1,9 @@
+:8443 {
+ tls /home/fedora/caddy-docker/certs/example_wildcard_chain.pem /home/fedora/caddy-docker/certs/example_wildcard.key
+ root /home/fedora/caddy-docker/publics
+ browse /test
+}
+:8080 {
+ root /home/fedora/caddy-docker/public
+ browse /test
+}
